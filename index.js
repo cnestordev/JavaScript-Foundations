@@ -35,7 +35,7 @@ function variableInterestRate(p, i, n) {
     let numerator = monthlyInterestRate * n1;
     let denominator = n1 - 1;
     let monthlyRate = (principal * (numerator / denominator)).toFixed(2);
-    console.log(`${name}, your monthly rate is $${Math.round(monthlyRate)}`);
+    console.log(`${name}, your monthly rate of ${startingPoint.toFixed(3)} $${Math.round(monthlyRate)}`);
     startingPoint += 0.005;
   }
 }
